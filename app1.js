@@ -1,3 +1,5 @@
+//* JavaScript ES5
+
 function imprimir(){
     for( var i = 0; i < 18000 ;  i++){
         console.log("Imprimio");
