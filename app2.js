@@ -10,7 +10,12 @@ var nul = null;
 
 var obj = {
     numero:10,
-    texto:"Nuevo texto"
+    texto:"Nuevo texto",
+
+    objHijo:{
+        numero2: 20,
+        texto: "Texto numero 2"
+    }
 };
 
-console.log(obj);
+//console.log(obj);
