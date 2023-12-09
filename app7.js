@@ -41,10 +41,17 @@ console.log( persona );
 function creaFuncion(){
     return function(name){
         console.log("Me crearon!!!!" + name);
+
+        return function(){
+            console.log("Segunda funcion");
+        }
     }
 }
 var nuevaFuncion = creaFuncion(); //* Aqui nuevaFuncion tendra lo que retorna creaFuncion, este objeto solamemnte.
-console.log(nuevaFuncion);
 //* Por ello para que se ejecute correctamente hay que pasarle el parametro de un nombre.
+console.log(nuevaFuncion);
 nuevaFuncion( persona.nombre );
+//* para ejecutar la segunda funcion, que esta dentro de creaFuncion.
+var segundaFuncion = nuevaFuncion(persona.nombre);
+segundaFuncion();
 
